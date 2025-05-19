@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayaamaha Travel & Immigration | Eastleigh, Nairobi Visa & Document Services</title>
+  <meta name="description" content="Ayaamaha, led by Abdirahman Yusuf in Eastleigh, Nairobi, provides expert visa, passport, KRA PIN, business registration, and document assistance for local residents and the Somali diaspora in Kenya.">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdfaf5; 
+      color: #0b1c2c; 
+      line-height: 1.6;
+    }
+    .brand-color {
+      color: #007f5f; 
+    }
+    .bg-brand {
+      background-color: #007f5f;
+    }
+    .btn-brand {
+      background-color: #007f5f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+    }
+    .btn-brand:hover, .btn-brand:focus {
+      background-color: #056e52;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 127, 95, 0.2);
+    }
+    .section {
+      padding: 60px 0;
+      position: relative; 
+    }
+    .section-title {
+        margin-bottom: 40px;
+        font-weight: 700;
+    }
+    .btn-brand.transition-all {
+      transition: all 0.3s ease;
+    }
+    .btn-brand.transition-all:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 127, 95, 0.3);
+    }
+    .card-service {
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex; 
+        flex-direction: column; 
+    }
+    .card-service .card-body-service { 
+        flex-grow: 1; 
+    }
+    .card-service:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+/* --- Navbar Styling (Responsive) --- */
+
+/* 1. Default (Mobile-first) styles - for the smallest screens */
+.navbar {
+    padding-top: 0.3rem;    
+    padding-bottom: 0.3rem;
+}
+
+.navbar-brand {
+    padding-top: 0.2rem;   
+    padding-bottom: 0.2rem;
+    margin-right: 0.5rem; /* Less margin on very small screens */
+    display: inline-flex;   
+    align-items: center;   
+    line-height: 1; 
+}
+
+.navbar-brand img {
+    max-height: 30px;  /* Smallest logo size for very narrow screens */
+    width: auto;
+    vertical-align: middle; 
+}
+
+.navbar-nav .nav-link {
+    padding-top: 0.5rem; 
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem; /* Slightly smaller font for very small screens */
+}
+
+.navbar .btn-brand { 
+    padding: 0.3rem 0.6rem; 
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-left: 0.3rem;
+}
+
+/* 2. Styles for slightly larger small screens (e.g., larger phones, small tablets in portrait) */
+@media (min-width: 576px) and (max-width: 991.98px) { /* Targets screens between sm and lg Bootstrap breakpoints */
+    .navbar {
+        padding-top: 0.4rem;    
+        padding-bottom: 0.4rem;
+    }
+    .navbar-brand img {
+        max-height: 40px;  /* A bit larger logo for this range */
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.95rem; /* Slightly larger font */
+    }
+    .navbar .btn-brand { 
+        padding: 0.375rem 0.75rem; 
+        font-size: 0.9rem;
+    }
+}
+
+/* 3. Desktop styles - Applied when screen width is 992px or more */
+@media (min-width: 992px) { 
+    .navbar {
+        height: 80px;  /* YOUR TARGET DESKTOP NAVBAR HEIGHT */
+        padding-top: 0;    
+        padding-bottom: 0;
+    }
+
+    .navbar > .container, 
+    .navbar > .container-fluid {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        height: 100%; 
+        padding-top: 0; 
+        padding-bottom: 0;
+        margin-right: 1rem; 
+    }
+
+    .navbar-brand img {
+        max-height: 60px; /* LARGER LOGO FOR DESKTOP */
+    }
+
+    .navbar-nav {
+        height: 100%; 
+    }
+
+    .navbar-nav .nav-link {
+        height: 100%;         
+        display: flex;
+        align-items: center;  
+        padding-top: 0;       
+        padding-bottom: 0;
+        font-size: 1rem;      
+    }
+    
+    .navbar .btn-brand { 
+        padding: 0.5rem 1rem; 
+        font-size: 1rem;      
+        align-self: center;   
+    }
+}
+/* --- End Navbar Styling --- */
+
+.footer-social-links a {
+        color: white;
+        margin: 0 10px;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+    }
+    .footer-social-links a:hover {
+        color: #007f5f;
+    }
+    .testimonial-blockquote {
+        font-style: italic;
+    }
+    .sticky-top {
+      z-index: 1030;
+    }
+    .highlight-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #007f5f; 
+    }
+
+    #hero {
+      background-image: url('images/hero-background.jpg'); 
+      background-size: cover;
+      background-position: center center;
+      padding-top: 100px; 
+      padding-bottom: 100px; 
+      position: relative; 
+      z-index: 1; 
+    }
+
+    #hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.55); 
+      z-index: -1; 
+    }
+
+    #hero .container {
+        position: relative; 
+        z-index: 2;
+    }
+
+    #hero h1,
+    #hero p {
+      color: #ffffff; 
+    }
+
+    #hero .btn-brand {
+        border: 2px solid white; 
+        padding: 10px 20px; 
+        font-size: 1rem;    
+    }
+    #hero .btn-brand:hover {
+        background-color: #f8f9fa; 
+        color: #056e52; 
+        border-color: #f8f9fa;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container"> 
+      <a class="navbar-brand fw-bold" href="#hero">
+        <img src="images/ayaamaha-new-logo.png" alt="Ayaamaha Logo" class="me-2 align-middle">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tips-faq">FAQs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#booking" class="btn btn-brand ms-lg-3 mt-2 mt-lg-0">Book Consultation</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section text-center" id="hero">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Your Eastleigh Partner for Visa & Document Services</h1>
+      <p class="lead col-md-8 mx-auto">Ayaamaha, led by Abdirahman Yusuf, offers trusted immigration, visa, and document assistance. We specialize in serving the local Nairobi community, including Eastleigh, South C, Hurlingham, and the Somali diaspora within Kenya, with client-focused, digitized solutions.</p>
+      <a href="#booking" class="btn btn-brand btn-lg mt-3 transition-all">Get Started Now</a>
+    </div>
+  </section>
+
+  <section class="section" id="highlights">
+    <div class="container">
+        <h2 class="text-center section-title">Key Highlights - Your Trusted Partner</h2>
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="highlight-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                </div>
+                <h5 class="fw-semibold">Local Eastleigh Expertise</h5>
+                <p>Deep understanding of Nairobi residents' needs and the Somali community in Kenya, right from our Hodo Suq office.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="highlight-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-laptop" viewBox="0 0 16 16">
+                        <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z"/>
+                    </svg>
+                </div>
+                <h5 class="fw-semibold">Full Digital Assistance</h5>
+                <p>We manage all online forms, document uploads, and digital submissions, simplifying complex processes for you.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="highlight-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-shield-check" viewBox="0 0 16 16">
+                        <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.06.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.953-.325-1.92-.723-2.837-.855A1.09 1.09 0 0 0 8.5 1.522 1.09 1.09 0 0 0 8 1.516l-.033.004A61.44 61.44 0 0 0 5.338 1.59zm-.028.421A59.92 59.92 0 0 1 8 1.171a59.92 59.92 0 0 1 2.69.841.419.419 0 0 1 .241.315c.482 3.582-.52 6.26-1.804 7.993a9.75 9.75 0 0 1-1.962 1.962c-.254.18-.495.309-.686.396-.078.036-.143.06-.192.08a.35.35 0 0 1-.08.018.35.35 0 0 1-.08-.018c-.048-.02-.114-.044-.192-.08-.19-.087-.432-.216-.686-.396a9.75 9.75 0 0 1-1.962-1.962C3.642 9.588 2.639 6.905 3.122 3.323a.419.419 0 0 1 .241-.315z"/>
+                        <path d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </div>
+                <h5 class="fw-semibold">Trusted Community Partner</h5>
+                <p>Led by Abdirahman Yusuf, offering personalized service with integrity and a familiar, reliable presence in Eastleigh.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section class="section bg-light" id="about">
+    <div class="container">
+      <h2 class="text-center section-title">About Ayaamaha Travel & Immigration Services</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="images/about-us-image.jpg" alt="Abdirahman Yusuf - Owner of Ayaamaha Travel & Immigration Services in Eastleigh" class="img-fluid rounded shadow-sm"> 
+        </div>
+        <div class="col-md-6">
+          <p class="lead">Welcome to Ayaamaha Travel & Immigration Services, founded and operated by Abdirahman Yusuf. Based in the heart of Eastleigh, Nairobi (Hodo Suq, opposite Kulan Cafe), we are committed to simplifying immigration, visa, and legal travel document processes for our local community.</p>
+          <p>Our primary focus is on assisting residents of Nairobi—including Eastleigh, South C, Hurlingham—and the Somali diaspora living in Kenya. We understand the unique needs of our clients, especially those who may have limited tech experience, and aim to provide a modernized, professional, and digitized service that builds on Abdirahman's deep trust within the community.</p>
+          <p><strong>Our Mission:</strong> To be the go-to service in Nairobi for reliable and accessible immigration and travel document support. We strive to empower our local clients by expertly navigating complex digital procedures, offering clear, package-based pricing, and ensuring a supportive experience from start to finish.</p>
+          <p><strong>What Makes Us Different?</strong></p>
+          <ul>
+            <li><strong>Local Expertise:</strong> Deep understanding of the needs of Nairobi residents and the Somali community in Kenya.</li>
+            <li><strong>Community-Focused:</strong> Strong roots in Eastleigh, dedicated to serving our neighbors.</li>
+            <li><strong>Comprehensive Digital Aid:</strong> We manage all online forms, document uploads, and digital submissions—perfect for those less familiar with tech.</li>
+            <li><strong>Niche Document Proficiency:</strong> Skilled in handling complex local and international document requirements, such as KRA PIN, business registration, and assisting with diaspora-related paperwork (e.g., ITIN for US contacts).</li>
+            <li><strong>Personalized & Trusted Service:</strong> Abdirahman Yusuf is directly involved, guaranteeing quality, integrity, and a familiar face.</li>
+          </ul>
+           <p>Whether you're seeking a visa, renewing a passport, registering a business, or need help with other documents, Ayaamaha is your local, trusted partner in Eastleigh.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section" id="services">
+    <div class="container">
+      <h2 class="text-center section-title">Our Comprehensive Services for Nairobi Residents</h2>
+      <p class="text-center lead mb-5">We provide end-to-end digital assistance for all your immigration and local documentation needs here in Kenya. <br class="d-none d-md-block">Ideal for individuals in Nairobi and Somali diaspora members within Kenya managing their affairs or assisting family.</p>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Visa Applications</h5>
+              <p>Expert assistance for visa applications to the US, UK, Schengen countries, UAE, Canada, and more. We manage document preparation, online form filling, digital uploads, and appointment scheduling. (KES 3,000 – 15,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Visa Applications">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Embassy & IOM Appointments</h5>
+              <p>We efficiently book and manage your appointments for various embassies and IOM (International Organization for Migration) services in Nairobi. (KES 1,000 – 4,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Embassy & IOM Appointments">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+             <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Passport Renewal & Assistance</h5>
+              <p>Guidance and support for Somali, Kenyan, and other passport renewal processes, including new passport applications for eligible individuals within Kenya. (KES 5,000 – 10,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Passport Services">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Business Registration & Compliance (Kenya)</h5>
+              <p>Full support for registering your business in Kenya via eCitizen, filing CR12, and setting up KRA PIN, NHIF, and NSSF for your local venture. (KES 4,000 – 7,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Business Registration & Compliance (Kenya)">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">KRA PIN & eCitizen Services (Kenya)</h5>
+              <p>Assistance with obtaining a KRA PIN, recovering lost PINs/access, and completing any required forms on the eCitizen platform for your needs within Kenya. (KES 1,000 – 2,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="KRA PIN & eCitizen Services (Kenya)">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Support for Diaspora-Related Documents</h5>
+              <p>Specialized support for local clients managing affairs with overseas connections, including ITIN applications for US relatives, IRS tax assistance guidance, and family legal form preparation. (KES 7,000 – 12,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Support for Diaspora-Related Documents">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Travel Support & Ticketing</h5>
+              <p>We assist with flight bookings (agent fee applies), travel insurance arrangements, and hotel itinerary planning for your journeys from Kenya. (Agent Fee: KES 500 – 3,000; Insurance: KES 2,000 – 4,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Travel Support & Ticketing">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Digital Document Preparation</h5>
+              <p>Precise document scanning, resizing to meet specific requirements, online form filling, application corrections, and secure digital uploads for all your local and international needs. (KES 500 – 3,000)</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Digital Document Preparation">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 d-flex">
+          <div class="p-4 rounded shadow-sm card-service w-100">
+            <div class="card-body-service">
+              <h5 class="brand-color fw-semibold">Yellow Fever & Vaccination Booking</h5>
+              <p>Get assistance with Yellow Fever certificate appointments and booking other required travel vaccinations for your trips originating from Kenya.</p>
+            </div>
+            <button class="btn btn-brand mt-auto w-100 transition-all" data-bs-toggle="modal" data-bs-target="#serviceModal" data-service-name="Yellow Fever & Vaccination Booking">Request Service</button>
+          </div>
+        </div>
+        <div class="col-md-12 text-center mt-4">
+            <p class="fst-italic"><strong>Urgent Processing Add-on:</strong> Need it faster? Add KES 2,000 for expedited service on most applications.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-light" id="tips-faq">
+    <div class="container">
+        <h2 class="text-center section-title">Quick Tips & Common Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <strong>Tip:</strong> Visa Photo Specifications
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Always double-check the specific photo requirements (size, background color, facial expression) for your target embassy before submission. Small errors in photos can lead to application delays! We can help ensure your photos meet all criteria.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>FAQ:</strong> Can I apply for a visa without visiting an embassy in Nairobi?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        For many visa types, an in-person appointment at the embassy or a designated visa application center in Nairobi is mandatory for biometrics (fingerprints and photo) and sometimes an interview. However, we handle all the preceding digital paperwork, form filling, and appointment booking to make the process as smooth as possible for you.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>Tip:</strong> Document Checklist for KRA PIN Registration
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        To register for a KRA PIN in Kenya, you'll typically need a copy of your National ID (for citizens), Alien ID (for resident foreigners), or Passport. For businesses, company registration documents are also required. We guide you through the exact requirements based on your specific situation.
+                    </div>
+                </div>
+            </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>FAQ:</strong> How long does a typical visa application process take?
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Processing times vary greatly depending on the country, visa type, and time of year. Some can take a few weeks, others several months. We provide estimated timelines based on current embassy information and help you prepare well in advance. Our urgent processing add-on can also expedite our service portion.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="serviceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="serviceModalLabel">Request a Service</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="mailto:ayaamahatravel@gmail.com" method="post" enctype="text/plain">
+            <input type="hidden" id="requestedService" name="RequestedService" value="">
+            <div class="mb-3">
+              <label for="modalName" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="modalName" name="Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="modalEmail" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="modalEmail" name="Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="modalPhone" class="form-label">Your Phone Number (Based in Kenya - Optional)</label>
+                <input type="tel" class="form-control" id="modalPhone" name="Phone">
+            </div>
+            <div class="mb-3">
+              <label for="modalMessage" class="form-label">Tell Us About Your Needs</label>
+              <textarea class="form-control" id="modalMessage" name="Message" rows="4" placeholder="Please specify the service you're interested in and any key details (e.g., destination country for visa, type of document needed in Kenya)." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-brand w-100">Submit Request</button>
+          </form>
+          <small class="d-block text-center mt-2">Alternatively, chat with us directly on <a href="https://wa.me/254711943409" target="_blank">WhatsApp</a>.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2 class="text-center section-title">Our Eastleigh Office & Valued Local Clients</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <img src="images/gallery1.jpg" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" alt="Ayaamaha Travel office in Hodo Suq, Eastleigh, Nairobi" data-large-src="images/gallery1-large.jpg"> 
+        </div>
+        <div class="col-md-4">
+          <img src="images/gallery2.jpg" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" alt="Abdirahman Yusuf assisting a local client at Ayaamaha Travel in Eastleigh" data-large-src="images/gallery2-large.jpg"> 
+        </div>
+        <div class="col-md-4">
+          <img src="images/gallery3.jpg" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#galleryModal" alt="Satisfied local client from Nairobi at Ayaamaha Travel" data-large-src="images/gallery3-large.jpg"> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="galleryModalLabel">Image Preview</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" id="modalImage" class="img-fluid rounded" alt="Expanded gallery image view from Ayaamaha Travel, Eastleigh">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section bg-light" id="testimonials">
+    <div class="container">
+      <h2 class="text-center section-title">Hear From Our Nairobi Clients</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner py-5">
+          <div class="carousel-item active text-center">
+            <blockquote class="blockquote testimonial-blockquote col-md-8 mx-auto">
+              <p class="mb-4 lead">“Ayaamaha in Eastleigh helped me file for my mother’s passport while she was visiting from the US – it was smooth and fast. Abdirahman is very professional and understands our needs here in Kenya.”</p>
+              <footer class="blockquote-footer">Khalid A., <cite title="Source Title">Resident assisting family (Nairobi/Minnesota connection)</cite></footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item text-center">
+            <blockquote class="blockquote testimonial-blockquote col-md-8 mx-auto">
+              <p class="mb-4 lead">“Professional and honest. They handled my eCitizen documents and KRA PIN right here in Nairobi, better than any cyber I've used. Highly recommend Ayaamaha in Eastleigh!”</p>
+              <footer class="blockquote-footer">Amina M., <cite title="Source Title">Eastleigh, Nairobi</cite></footer>
+            </blockquote>
+          </div>
+          <div class="carousel-item text-center">
+            <blockquote class="blockquote testimonial-blockquote col-md-8 mx-auto">
+              <p class="mb-4 lead">“The WhatsApp booking was easy, and they helped my cousin here in Nairobi apply for a UK visa with no stress. They really know all the digital stuff for us locals.”</p>
+              <footer class="blockquote-footer">Hussein F., <cite title="Source Title">South C, Nairobi</cite></footer>
+            </blockquote>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section text-center" id="booking">
+    <div class="container">
+      <h2 class="section-title">Ready to Get Started Here in Nairobi? Let's Talk!</h2>
+      <p class="lead mb-4 col-md-8 mx-auto">Your immigration and documentation journey in Kenya begins here. Click below to chat with Abdirahman directly on WhatsApp or send us an email. We're committed to responding promptly to our local clients.</p>
+      <div class="mt-4">
+          <a href="https://wa.me/254711943409" target="_blank" class="btn btn-brand btn-lg me-md-3 mb-3 mb-md-0 transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-whatsapp me-2 align-middle" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+            </svg>Chat on WhatsApp
+          </a>
+          <a href="mailto:ayaamahatravel@gmail.com" class="btn btn-outline-secondary btn-lg transition-all">
+             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-envelope me-2 align-middle" viewBox="0 0 16 16">
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+            </svg>Email Us Directly
+          </a>
+      </div>
+      <p class="mt-4 small">Payment methods like MPESA Global, WorldRemit, and PayPal are available for your convenience.</p>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-5 mt-auto" id="contact">
+    <div class="container text-center">
+      <p class="h5 mb-3">Ayaamaha Travel & Immigration Services</p>
+      <p class="small mb-1"><strong>Visit Us:</strong> Hodo Suq (2nd Floor), Opposite Kulan Cafe | Eastleigh, Nairobi, Kenya</p>
+      <p class="small mb-3">
+        <a href="tel:+254711943409" class="text-white text-decoration-none me-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill me-1" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/></svg>
+            +254 711 943409
+        </a> |
+        <a href="mailto:ayaamahatravel@gmail.com" class="text-white text-decoration-none ms-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill me-1" viewBox="0 0 16 16"><path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/></svg>
+            ayaamahatravel@gmail.com
+        </a>
+      </p>
+      <p class="small mb-3"><a href="#" target="_blank" class="text-white" id="googleMapsLink">Find us on Google Maps (Link TBC)</a></p>
+
+      <div class="footer-social-links mb-3">
+        <a href="https://www.facebook.com/your-ayaamaha-page-url" target="_blank" aria-label="Ayaamaha on Facebook" title="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0 0 3.603 0 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+        <a href="https://wa.me/254711943409" target="_blank" aria-label="Chat on WhatsApp" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/></svg></a>
+      </div>
+      <p class="small mb-0">© <span id="copyrightYear">2025</span> Ayaamaha Travel & Immigration Services. All rights reserved. <br class="d-sm-none">Website by NairobiPixel (optional)</p>
+    </div>
+  </footer>
+
+  <script>
+    // Gallery Modal Image Update
+    const galleryImages = document.querySelectorAll('#gallery img[data-bs-toggle="modal"]');
+    const modalImage = document.getElementById('modalImage');
+    const galleryModalLabel = document.getElementById('galleryModalLabel');
+
+    if (galleryImages && modalImage) {
+      galleryImages.forEach(img => {
+        img.addEventListener('click', function () {
+          const largeSrc = this.dataset.largeSrc;
+          modalImage.src = largeSrc ? largeSrc : this.src;
+          modalImage.alt = this.alt;
+          if(galleryModalLabel) galleryModalLabel.textContent = this.alt;
+        });
+      });
+    }
+
+    // Service Modal - Populate service name
+    const serviceRequestButtons = document.querySelectorAll('[data-bs-toggle="modal"][data-bs-target="#serviceModal"]');
+    const requestedServiceInput = document.getElementById('requestedService');
+    const modalMessageTextarea = document.getElementById('modalMessage');
+
+    if (serviceRequestButtons && requestedServiceInput && modalMessageTextarea) {
+      serviceRequestButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const serviceName = this.dataset.serviceName;
+          if (serviceName) {
+            requestedServiceInput.value = serviceName;
+            modalMessageTextarea.placeholder = `I'm interested in your ${serviceName} service. Please provide more details, e.g., destination country, current status, type of document needed in Kenya.`;
+            document.getElementById('serviceModalLabel').textContent = `Request: ${serviceName}`;
+          } else {
+            requestedServiceInput.value = "General Inquiry";
+            modalMessageTextarea.placeholder = "Please describe the service you are interested in or any specific questions you have regarding your needs in Kenya.";
+            document.getElementById('serviceModalLabel').textContent = "Request a Service";
+          }
+        });
+      });
+    }
+    // Dynamic Copyright Year
+    document.getElementById('copyrightYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+}
